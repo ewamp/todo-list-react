@@ -1,0 +1,51 @@
+.section__list {
+    border: 1px solid hsl(0, 0%, 90%);
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.section__listItem {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid hsl(0, 0%, 90%);
+    column-gap: 10px;
+}
+
+.section__listItem--hidden {
+    display: none;
+}
+
+.section__listItem--done {
+    text-decoration: line-through;
+}
+
+.section__button {
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    transition: 1s;
+}
+
+.section__button:hover {
+    background-color: hsl(120, 100%, 33%);
+}
+
+.section__button--done {
+    background-color: green;
+}
+
+.section__button--red {
+    border: 1px solid crimson;
+    background-color: crimson;
+}
+
+.section__button--red:hover {
+    background-color: hsl(348, 83%, 65%);
+}
